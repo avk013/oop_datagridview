@@ -40,9 +40,12 @@ namespace dgw1
         {
             InitializeComponent();
         }
-
+        dg a1 = new dg();
         private void button1_Click(object sender, EventArgs e)
         {
+            a1.name = dataGridView1;
+            a1.init(10, 3, 1);
+            a1.rando(dg.values.integer, -10, 10);
 
         }
     }
