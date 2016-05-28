@@ -43,7 +43,10 @@ namespace dgw1
                 for (int j = begin_row; j < name.RowCount; j++)
                     for (int i = begin_column; i < name.ColumnCount; i++)
                         if (name.Rows[j].Cells[i].Value.ToString()==stroka)
-                        { val_column = i+1; val_row = j+1; }
+                        { val_column = i+1; val_row = j+1;
+                            name.Rows[j].Cells[i].Style.BackColor = Color.Pink;
+                           
+                        }
                 return 1;
             }
         }
